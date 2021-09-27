@@ -7,21 +7,23 @@ namespace NewCore.Dtos
     public record CustomerDto
     {
         [Key]
-        public int CustomerId { get; set; }
+        public int customerRef { get; set; }
+        [StringLength(15)]
+        public string customerId { get; set; }
         [Required]
         [StringLength(50)]
-        public string Name { get; set; }
+        public string name { get; set; }
         [Required]
         [StringLength(50)]
-        public string Location { get; set; }
+        public string location { get; set; }
         [Required]
         [StringLength(50)]
-        public string Email { get; set; }
+        public string email { get; set; }
     }
 
     public record CusIdDto
     {
         [Required]
-        public int Id { get; set; }
+        public string customerId { get; set; }
     }
 }

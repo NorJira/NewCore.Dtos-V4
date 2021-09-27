@@ -6,25 +6,34 @@ namespace NewCore.Dtos
 {
     public record PolicyDto
     {
-        public int Id { get; set; }
+        [Key]
+        public int polRef { get; set; }
         [Required]
         [StringLength(15)]
-        public string PolId { get; set; }
+        public string polId { get; set; }
         [Required]
         [StringLength(5)]
-        public string PolStatus { get; set; }
+        public string polStatus { get; set; }
         [Column(TypeName = "datetime")]
-        public DateTime PolCommDt { get; set; }
+        public DateTime polCommDt { get; set; }
         [Column(TypeName = "datetime")]
-        public DateTime PolExpryDate { get; set; }
-        [Key]
-        public int CustomerId { get; set; }
+        public DateTime polExpryDate { get; set; }
         [Required]
         [StringLength(15)]
-        public string PlanId { get; set; }
+        public string customerId { get; set; }
+        [Required]
+        [StringLength(15)]
+        public string planId { get; set; }
         [Column(TypeName = "decimal(14, 2)")]
-        public decimal PolFaceAmt { get; set; }
+        public decimal polFaceAmt { get; set; }
         [Column(TypeName = "decimal(14, 2)")]
-        public decimal PolPremAmt { get; set; }
+        public decimal polPremAmt { get; set; }
+    }
+
+    public record PolIdDto
+    {
+        [Required]
+        [StringLength(15)]
+        public string polId { get; set; }
     }
 }

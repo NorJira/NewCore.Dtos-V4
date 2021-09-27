@@ -9,10 +9,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Dtos\" />
-    <None Remove="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
-    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Extensions\CustomerExtensions.cs" />
+    <Compile Remove="Extensions\PolicyExtensions.cs" />
   </ItemGroup>
 </Project>
