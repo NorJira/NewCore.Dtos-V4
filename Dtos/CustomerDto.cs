@@ -1,6 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using NewCore.Data.Models;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace NewCore.Dtos
 {

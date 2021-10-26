@@ -5,9 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NewCore.Data\NewCore.Data.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <None Remove="Dtos\" />
   </ItemGroup>
   <ItemGroup>
